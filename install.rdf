@@ -3,10 +3,13 @@
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest">
     <em:name>Partly Cloudy</em:name>
-    <em:id>partly-cloudy@ang.st</em:id>
+    <em:id>partly@ang.st</em:id>
     <em:version>0.01</em:version>
     <em:description>Clouds in a sidebar</em:description>
     <em:developer>Jesse Andrews; http://overstimulate.com</em:developer>
+    <em:developer>Jake Dahn; http://jakedahn.com</em:developer>
+    <em:iconURL>chrome://partly/skin/partly-cloudy.png</em:iconURL>
+    
 
     <!-- firefox -->
     <em:targetApplication>
