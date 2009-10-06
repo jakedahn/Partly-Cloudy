@@ -53,7 +53,32 @@ input#saveButton {
     height: 25px;
     border: 1px solid #C9D5DE;
     margin: 10px 0 0 111px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    background: url('buttonBg.png') top left repeat-x;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    color: #555;
 }
+
+input#saveButton:hover {
+    background-position: bottom left;
+}
+
+input#saveButton:active {
+    background: #B8C5D4;
+}
+
+
 #findKeys {
     border-top: 2px solid #fff;
+}
+
+#aws {
+    background: url('aws.png') top right no-repeat ;
+}
+
+select#buckets {
+    margin-bottom: 10px;
 }
