@@ -10,27 +10,35 @@
     <script type="text/javascript" src="chrome://browser/content/utilityOverlay.js"></script>
   </head>
   <body bgcolor="#fff">
-    <div id="view" style="display:none">
-      <select id="buckets" onchange="list(this.options[this.selectedIndex].value)"><option></option></select>
-      <div id="files"></div>
+	<div id="header">
+		<ul>
+			<li id="login"><a>Login</a></li>
+			<li id="findKeys"><a href="javascript:aws_setup();">Fetch your Amazon keys.</a></li>
+		</ul>
+	</div>
+	<div id="identity">
+		<h1>Partly Cloudy</h1>
+	</div>
+	<div id="setup" style="display:none">
+    <div class="field">
+      <label for="s3-key">AWS Access Key</label>
+      <input type="text" id="s3-key" />
     </div>
-    <div id="setup" style="display:none">
-      <h2 id="aws">Amazon S3 Setup</h2>
-      <div class="field">
-        <label for="s3-key">AWS Access Key</label>
-        <input type="text" id="s3-key" />
-      </div>
-      <div class="field">
-        <label for="s3-secret-key">S3 Secret Key</label>
-        <input type="password" id="s3-secret-key" />
-      </div>
-      <div>
-        <label>&nbsp;</label>
-        <input type="button" id="saveButton" value="Save" onclick="save()" />
-      </div>
-      <p id="findKeys"><a href="javascript:aws_setup();">Don't know your keys? Find them here.</a></p>
-      
+    <div class="field">
+      <label for="s3-secret-key">S3 Secret Key</label>
+      <input type="password" id="s3-secret-key" />
     </div>
+    <div>
+      <label>&nbsp;</label>
+      <input type="button" id="saveButton" value="Save" onclick="save()" />
+    </div>
+    
+  </div>
+
+	<div id="view" style="display:none">
+		<select id="buckets" onchange="list(this.options[this.selectedIndex].value)"><option></option></select>
+		<div id="files"></div>
+	</div>
     <script src="sidebar.js" type="text/javascript"></script>
   </body>
 </html>

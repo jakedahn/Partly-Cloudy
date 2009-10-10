@@ -106,3 +106,7 @@ function showTree(li, directory, first) {
       alert('error');
     });
 }
+
+$$("li#login a").bind("click",function (e) {
+  alert("blah");
+  });
